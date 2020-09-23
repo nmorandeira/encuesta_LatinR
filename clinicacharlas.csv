@@ -1,0 +1,12 @@
+País,Charlas,Cantidadbarreras,Barreras1-tematica,Barreras2-avance,Barreras3-Faltaclaridad,Barreras4-Redactaringles,Barreras5-videoingles,Barreras6-incomodidad,Barreras7-discapacidad,Barreras8-recursostecno,Barreras9-OTROpocotiempo,Redaccion,Guionvideo,clinicadecharlas,importancia_clinica,RivaQuiroga,importancia_Riva,Repetir
+Argentina,1,2,0,0,1,0,1,0,0,0,0,MasRevision,MasRevision,Participo_2,4,Asincro,2,Ambas
+México,1,0,0,0,0,0,0,0,0,0,0,MasRevision,MasRevision,Conoce,1,Asincro,3,Ambas
+Argentina,2,4,0,0,1,1,1,0,0,1,0,Traduccion,Traduccion,Participo_2,4,Sincro,4,Ambas
+Argentina,1,3,0,0,1,1,1,0,0,0,0,No_revisa,MasRevision,Participo_2,3,Asincro,2,clinica
+Argentina,1,1,0,0,0,0,0,0,0,0,1,MasRevision,MasRevision,Participo_1,1,Aun_no_vio,1,Ambas
+Argentina,1,1,0,1,0,0,0,0,0,0,0,Traduccion,MasRevision,Participo_2,4,Sincro,4,Riva
+Argentina,1,3,0,0,1,0,1,1,0,0,0,Traduccion,Traduccion,Participo_2,5,Asincro,1,Ambas
+Argentina,1,4,1,0,0,0,1,1,0,1,0,MasRevision,MasRevision,Participo_2,5,Sincro,4,Ambas
+Argentina,1,4,1,0,0,0,1,1,0,1,0,MasRevision,MasRevision,Participo_2,5,Asincro,5,Ambas
+Brasil,1,2,0,1,0,0,1,0,0,0,0,MasRevision,MasRevision,Conoce,3,Sincro,5,Ambas
+Argentina,1,1,0,0,0,0,1,0,0,0,0,MasRevision,MasRevision,Participo_2,5,Asincro,5,Ambas
