@@ -3,8 +3,8 @@ title: "Envío de propuestas a conferencias globales de R"
 subtitle: ¿Qué barreras percibe la comunidad de América Latina? -- Resultados de una
   encuesta sobre enviar propuestas de charlas a rstudio::global(2021)
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 classoption: a4paper
 ---
 
@@ -195,6 +195,7 @@ ggplot(datos, aes(x=importancia_clinica)) +
 La charla de Riva Quiroga (RLadies Chile + LatinR) "¿Cómo preparar una propuesta de presentación para una conferencia o un meetup de R?" fue un MeetUp en el que Riva presentó consejos sobre cómo enfocar la propuesta y realizar un envío exitoso, con ejemplos de propuestas de usuarias de R de América Latina. La charla se realizó el día 1 de agosto de 2020 y luego estuvo disponible la grabación. [Más información aquí](https://www.meetup.com/rladies-scl/events/272107368/).
 
 En relación a esta charla, se preguntó si se conocía la existencia de la charla, si se había asistido y cuán importante fue para el envío de propuestas de charlas a rstudio::global(2021).
+
 
 
 ```{r riva, echo=F, fig.align="center", out.width="80%"}
