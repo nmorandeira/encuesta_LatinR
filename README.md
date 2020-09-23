@@ -1,2 +1,2 @@
 # encuesta_LatinR
-Encuestra sobre envío de propuestas a rstudio::global(2021)
+Encuesta sobre envío de propuestas a rstudio::global(2021)
