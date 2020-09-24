@@ -3,8 +3,8 @@ title: "Envío de propuestas a conferencias globales de R"
 subtitle: ¿Qué barreras percibe la comunidad de América Latina? -- Resultados de una
   encuesta sobre enviar propuestas de charlas a rstudio::global(2021)
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 classoption: a4paper
 ---
 
@@ -16,11 +16,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Muchas de las próximas conferencias globales de R serán virtuales. La posibilidad de participar a la distancia disminuye el presupuesto y el tiempo destinado a asistir y/o exponer en estas conferencias. Así, las próximas conferencias virtuales suponen una oportunidad de incluir presentaciones de asistentes usualmente relegados, aumentando la diversidad de las exposiciones.
 
-En este marco, una primera experiencia para la comunidad de usuarias/os de R de América Latina fue el llamado a enviar propuestas de charlas a la conferencia rstudio::global(2021). En nuestra comunidad, nos alentamos a enviar propuestas y organizamos actividades y redes de cooperación para mejorar nuestros envíos. Para el  envío de propuestas a esta conferencia, se solicitaba un título y resumen (abstract) en inglés, más un video de hasta 60 minutos también en inglés ([más detalles aquí](https://blog.rstudio.com/2020/07/17/rstudio-global-call-for-talks/)).
+En este marco, una primera experiencia para la comunidad de usuarias/os de R de América Latina fue el llamado a enviar propuestas de charlas a la conferencia rstudio::global(2021). En nuestra comunidad, nos alentamos a enviar propuestas y organizamos actividades y redes de cooperación para mejorar nuestros envíos. Para el  envío de propuestas a esta conferencia, se solicitaba un título y resumen (abstract) en inglés, más un video de hasta 60 minutos también en inglés (más detalles aquí: <https://blog.rstudio.com/2020/07/17/rstudio-global-call-for-talks/>).
 
-El objetivo de este informe es analizar qué ayudó y qué fue una barrera para la comunidad de usuarias/os de R en América Latina, a la hora de enviar una propuesta de charla a la conferencia rstudio::global(2021). Así, podremos proponer herramientas y mejoras en próximas conferencias virtuales y/o globales. También buscamos analizar las temáticas sobre las que enviamos propuestas de charlas a esta conferencia.
+El **objetivo** de este informe es analizar qué ayudó y qué fue una barrera para la comunidad de usuarias/os de R en América Latina, a la hora de enviar una propuesta de charla a la conferencia rstudio::global(2021). Así, podremos proponer herramientas y mejoras en próximas conferencias virtuales y/o globales.
 
-La encuesta se encontró abierta a recibir respuestas entre el 29 de agosto de 2020 (el día siguiente al plazo límite para envíos) y el 16 de septiembre de 2020. Estuvo destinada a la comunidad de usuarias/os de R en América Latina, en particular a quienes enviamos o pensamos en enviar propuestas de charlas a la conferencia rstudio::global(2021). La encuesta estaba escrita en castellano rioplatense (español con voseo). Se difundió en la comunidad de LatinR y en la red social Twitter.
+La **encuesta** se encontró abierta a recibir respuestas entre el 29 de agosto de 2020 (el día siguiente al plazo límite para envíos) y el 16 de septiembre de 2020. Estuvo destinada a la comunidad de usuarias/os de R en América Latina, en particular a quienes enviamos o pensamos en enviar propuestas de charlas a la conferencia rstudio::global(2021). La encuesta estaba escrita en castellano rioplatense. Se difundió en la comunidad de LatinR y en la red social Twitter.
 
 La encuesta y este informe fueron elaborados por *Natalia Morandeira*, con aportes y colaboración de *Paola Corrales*, *Yanina Bellini Saibene* y *Elio Campitelli*.
 
@@ -38,7 +38,9 @@ datos <- clean_names(datos)
 ## Respuestas recibidas
 La encuesta fue respondida por **11 personas**, que enviaron un total de **12 propuestas de charlas** a rstudio::conf(2021). Conocemos que 2 de estas 12 charlas fueron aceptadas para su presentación en la conferencia. Esto no excluye la posibilidad de que haya otras propuestas enviadas y/o aceptadas con autoría de expositores de América Latina.
 
-```{r paises, echo=F, fig.align="center", out.width="80%"}
+&nbsp;
+
+```{r paises, echo=F, fig.align="center", out.width="75%"}
 ggplot(datos, aes(x=pais)) +
   geom_bar(show.legend = F, fill="steelblue") +
   xlab("País de residencia") +
@@ -48,7 +50,8 @@ ggplot(datos, aes(x=pais)) +
   theme(plot.title.position = "plot", panel.background = element_rect(fill="white", color="black")) 
 ```
 
-  
+&nbsp;
+
 ## Barreras percibidas para el envío de propuestas
 La primera pregunta en relación a las dificultades o barreras percibidas fue: *"¿Cuáles fueron tus dificultades o barreras para enviar propuestas de charlas? (podés marcar todas las opciones que consideres necesarias)"* y las opciones fueron:
 
@@ -62,12 +65,13 @@ La primera pregunta en relación a las dificultades o barreras percibidas fue: *
 8. Grabar el video, debido a los recursos tecnológicos de que dispongo y/o mis habilidades con la técnica audiovisual.
 9. Otra (¿cuál?).
 
-Los resultados obtenidos se muestran en los siguientes dos gráficos. Cabe destacar que todas las personas que contestaron la encuesta enviaron una o dos propuestas de charlas. Es decir, no recabamos información sobre las potenciales barreras a personas que no llegaron a enviar propuestas de charlas.
+Los resultados obtenidos se muestran en los siguientes dos gráficos. Cabe destacar que todas las personas que contestaron la encuesta enviaron una o dos propuestas de charlas. Es decir, **no recabamos información sobre las potenciales barreras a personas que no llegaron a enviar propuestas de charlas**.
 
 La solicitud de enviar una propuesta de charla en formato video breve fue percibida como una dificultad o barrera por 9 de las 11 personas que contestaron a la encuesta (las cuales enviaron 10 charlas). Ocho de estas personas indicaron dificultades relacionadas con el envío del video en idioma inglés; mientras que 3 personas indicaron incomodidad en compartir su voz y/o imagen; y 3 personas indicaron dificultades debido a los recursos tecnológicos y/o habilidades audiovisuales de que disponen.
 
+&nbsp;
 
-```{r N_barreras, echo=F, fig.align="center", out.width="80%"}
+```{r N_barreras, echo=F, fig.align="center", out.width="75%"}
 ggplot(datos, aes(x=cantidadbarreras)) +
   geom_bar(show.legend = F, fill="steelblue") +
   coord_flip() +
@@ -78,7 +82,9 @@ ggplot(datos, aes(x=cantidadbarreras)) +
   
 ```
 
-```{r tipo_barreras, echo=F, fig.align="center", out.width="80%"}
+&nbsp;
+
+```{r tipo_barreras, echo=F, fig.align="center", out.width="75%"}
 
 barreras <- c("9. Otra. Video: poco tiempo para grabarlo", "8. Video: recursos tecno-audiovisuales", "7. Video: discapacidad", "6. Video: incomodidad imagen/voz", "5. Video: inglés", "4. Redacción: inglés", "3. Falta claridad en instrucciones", "2. Grado de avance del trabajo", "1. Temática")
 
@@ -96,6 +102,8 @@ datos %>% pivot_longer(cols="barreras1_tematica":"barreras9_otr_opocotiempo", na
   
 ```
 
+&nbsp;
+
 Las siguientes preguntas buscaron conocer cómo fue el proceso de redacción de título y resumen de la conferencia y cómo fue el proceso de elaboración del guión del video. En particular, apuntaron a conocer las posibles dificultades por no ser hablantes nativas/os de inglés. Las preguntas originales fueron:
 
 *"En relación a la redacción del título-abstract, ¿con cuál de estas opciones te identificás más?"* y las opciones posibles fueron (selección excluyente):
@@ -105,12 +113,13 @@ Las siguientes preguntas buscaron conocer cómo fue el proceso de redacción de 
 3. Escribí directamente en inglés, no revisé mucho más que si lo hubiera escrito en castellano/portugués.
 4. Otra.
 
+Las opciones están ordenadas en orden decreciente de esfuerzo en comparación con el esfuerzo de una/un hablante nativa/o de inglés. No se recibieron respuestas _4. Otra_.
 
-Las opciones están ordenadas en orden decreciente de esfuerzo en comparación con el esfuerzo de un hablante nativo de inglés. No se recibieron respuestas _4. Otra_.
+Diez de las personas indicaron opciones consistentes con un esfuerzo adicional respecto a una/un hablante nativa/o. De acuerdo a las respuestas a la pregunta anterior, la redacción en inglés fue percibida como una barrera para 2 de estas personas; mientras que las 8 restantes no lo señalaron como barrera (a pesar del esfuerzo adicional).
 
-Diez de las personas indicaron opciones consistentes con un esfuerzo adicional respecto a un hablante nativo. Las respuestas a la pregunta anterior la redacción en inglés fue percibida como una barrera para 2 de estas personas; mientras que las 8 restantes no lo señalaron como barrera.
+&nbsp;
 
-```{r redaccion, echo=F, fig.align="center", out.width="80%"}
+```{r redaccion, echo=F, fig.align="center", out.width="75%"}
 
 procedimientos=c("3. Inglés, sin revisión adicional", "2. Inglés, con revisión adicional", "1. Otro idioma, con traducción-revisión")
 
@@ -126,6 +135,7 @@ datos %>%
   
 ```
 
+&nbsp;
 
 *En relación al guión del video, ¿con cuál de estas opciones te identificás más?* y las opciones posibles fueron (selección excluyente):
 
@@ -134,9 +144,11 @@ datos %>%
 3. Escribí el guión del video directamente en inglés, no revisé ni practiqué más que si lo hubiera hecho en castellano/portugués.
 4. No elaboré un guión pormenorizado para el video.
 
-Las opciones están ordenadas en orden decreciente de esfuerzo en comparación con el esfuerzo de un hablante nativo de inglés. No se recibieron respuestas _3_ ni _4_.
+Las opciones están ordenadas en orden decreciente de esfuerzo en comparación con el esfuerzo de una/un hablante nativa/o de inglés. No se recibieron respuestas _3_ ni _4_.
 
-```{r guionvideo, echo=F, fig.align="center", out.width="80%"}
+&nbsp;
+
+```{r guionvideo, echo=F, fig.align="center", out.width="75%"}
 
 procedimientos=c("2. Inglés, con revisión adicional", "1. Otro idioma, con traducción-revisión")
 
@@ -152,24 +164,27 @@ datos %>%
   
 ```
 
+&nbsp;
+
 ### Comentarios abiertos en relación a las dificultades y barreras
 Se copian algunos de los comentarios dejados por quienes respondieron a la encuesta, ya sea en el apartado "sugerencias para mejorar próximas conferencias" o bien en el campo de comentarios abiertos.
 
-+ En relación al idioma: _"Que nos dejen presentar en nuestro idioma"_ (dos personas incluyeron este comentario); _"Permitir charlas en otro idioma desde un principio"_; _"Flexibilidad con el idioma"_; _"Que el idioma de la presentación no se un requisito"_; _"Poder enviar nuestros resumenes en ingles y en nuestra lengua nativa"_.
-+ En relación a idiomas/subtítulos: _"Que se invierta para hacer traducciones auditivas y subtítulos en la mayor cantidad de idiomas posibles"_; _"Incluir subtítulos"_; _"Que en las presentaciones orales grabadas esten disponibles los subtitulos en varios idiomas"_.
-+ En relación a los videos: _"No hacer una selección por video"_, _"Quitar el requisito de grabar el video. Genera un filtro innecesario a la hora de enviar trabajos y es posible que afecte negativamente la evaluación de los evaluadores. Esto iría en la misma dirección que las políticas en contra de poner fotos en curriculum vitae y de realizar evaluaciones ciegas en orquestas"_; _"Hacer algo que no seleccione por video (imagen, aspecto, idioma). Capáz grabar sólo mi voz hubiera sido menos intimidante que el video. Y además evaluar sólo la voz limita la discriminación (de los evaluadores) por imagen (identidad sexual, color de piel, vestuario, etc)"_; _"La possibilidad de hacer el video en mi lengua y poner subtitulos"._
++ En relación al idioma: _"Que nos dejen presentar en nuestro idioma"_ (dos personas incluyeron este comentario); _"Permitir charlas en otro idioma desde un principio"_; _"Flexibilidad con el idioma"_; _"Que el idioma de la presentación no sea un requisito"_; _"Poder enviar nuestros resumenes en inglés y en nuestra lengua nativa"_.
++ En relación a idiomas/subtítulos: _"Que se invierta para hacer traducciones auditivas y subtítulos en la mayor cantidad de idiomas posibles"_; _"Incluir subtítulos"_; _"Que en las presentaciones orales grabadas estén disponibles los subtítulos en varios idiomas"_.
++ En relación a los videos: _"No hacer una selección por video"_, _"Quitar el requisito de grabar el video. Genera un filtro innecesario a la hora de enviar trabajos y es posible que afecte negativamente la evaluación de los evaluadores. Esto iría en la misma dirección que las políticas en contra de poner fotos en curriculum vitae y de realizar evaluaciones ciegas en orquestas"_; _"Hacer algo que no seleccione por video (imagen, aspecto, idioma). Capaz grabar sólo mi voz hubiera sido menos intimidante que el video. Y además evaluar sólo la voz limita la discriminación (de los evaluadores) por imagen (identidad sexual, color de piel, vestuario, etc)"_; _"La possibilidad de hacer el video en mi lengua y poner subtitulos"._
 + _"Asignar un corrector/a de inglés gratuito para los abstract."_
 + _"Que publiquen las propuestas que reciben para aprender de ellas."_
 
 ## Cooperación y ayuda
 En esta segunda parte de la encuesta buscamos recabar posibles ayudas o alientos de la comunidad de América Latina.
 
-La #clinicadeCharlas (en portugués: #clinicadePalestras) es espacio de la comunidad de LatinR. En el marco del envío de propuestas a rstudio::global(2021), se realizaron reuniones virtuales, se discutieron las instrucciones para el envío de trabajos, se recibió y dio feedback sobre resúmenes y videos en documentos de trabajo colaborativos, entre otros. En el canal de slack #clinicadecharlas de LatinR hay 45 personas. La existencia del espacio se divulgó en las comunidades de LatinR, RLadies, RenBaires, entre otras, en idiomas castellano y portugués. El espacio sigue abierto para el envío a otras conferencias.
+La **#clinicadeCharlas** (en portugués: #clinicadePalestras) es espacio de la comunidad de LatinR. En el marco del envío de propuestas a rstudio::global(2021), se realizaron reuniones virtuales, se discutieron las instrucciones para el envío de trabajos, se recibió y dio feedback sobre resúmenes y videos en documentos de trabajo colaborativos, entre otras actividades. En el **canal de slack** #clinicadecharlas de LatinR se sumaron **45 personas** desde julio de 2020. La existencia del espacio se divulgó en las comunidades de LatinR, RLadies, RenBaires, entre otras, en idiomas castellano y portugués. El espacio sigue abierto para colaborar en el envío a otras conferencias.
 
 En relación a esta iniciativa, se preguntó si se conocía la existencia de la #clinicadecharlas, si se había participado y cuán importante fue para el envío de propuestas de charlas a rstudio::global(2021).
 
+&nbsp;
 
-```{r clinica, echo=F, fig.align="center", out.width="80%"}
+```{r clinica, echo=F, fig.align="center", out.width="75%"}
 clinica=c("Participó: hizo y recibió comentarios", "Participó: hizo comentarios", "Conoce la existencia, no participó")
 
 datos %>%
@@ -181,24 +196,29 @@ datos %>%
   ylab("Número de respuestas") +
   labs(title="Participación en 'Clínica de charlas' de LatinR") +
   theme(plot.title.position = "plot", panel.background = element_rect(fill="white", color="black")) 
+```
 
+&nbsp;
+
+```{r clinica2, echo=F, fig.align="center", out.width="75%"}
 ggplot(datos, aes(x=importancia_clinica)) +
   geom_bar(show.legend = F, fill="steelblue") +
   coord_flip() +
   xlab("Importancia") +
   ylab("Número de respuestas") +
-  labs(title="Importancia de 'Clínica de charlas' LatinR") +
+  labs(title="Importancia de 'Clínica de charlas' LatinR", subtitle="1 - Poco importante, 5 - Muy importante") +
   theme(plot.title.position = "plot", panel.background = element_rect(fill="white", color="black")) 
 ```
 
+&nbsp;
 
-La charla de Riva Quiroga (RLadies Chile + LatinR) "¿Cómo preparar una propuesta de presentación para una conferencia o un meetup de R?" fue un MeetUp en el que Riva presentó consejos sobre cómo enfocar la propuesta y realizar un envío exitoso, con ejemplos de propuestas de usuarias de R de América Latina. La charla se realizó el día 1 de agosto de 2020 y luego estuvo disponible la grabación. [Más información aquí](https://www.meetup.com/rladies-scl/events/272107368/).
+La charla de *Riva Quiroga* (**RLadies Chile + LatinR**) *"¿Cómo preparar una propuesta de presentación para una conferencia o un meetup de R?"* fue un MeetUp en el que Riva presentó consejos sobre cómo enfocar la propuesta y realizar un envío exitoso, con ejemplos de propuestas de usuarias de R de América Latina. La charla se realizó el día 1 de agosto de 2020 y luego estuvo disponible la grabación. En el MeetUp se inscribieron 68 personas. Más información aquí: <https://www.meetup.com/rladies-scl/events/272107368/>.
 
 En relación a esta charla, se preguntó si se conocía la existencia de la charla, si se había asistido y cuán importante fue para el envío de propuestas de charlas a rstudio::global(2021).
 
+&nbsp;
 
-
-```{r riva, echo=F, fig.align="center", out.width="80%"}
+```{r riva, echo=F, fig.align="center", out.width="75%"}
 riva=c("Asistió sincrónicamente", "La vio asincrónicamente", "Aún no vio la charla")
 
 datos %>%
@@ -210,18 +230,23 @@ datos %>%
   ylab("Número de respuestas") +
   labs(title="Asistencia al MeetUp de RLadies Chile + LatinR") +
   theme(plot.title.position = "plot", panel.background = element_rect(fill="white", color="black")) 
+``` 
 
+&nbsp;
+
+```{r riva2, echo=F, fig.align="center", out.width="75%"}
 ggplot(datos, aes(x=importancia_riva)) +
   geom_bar(show.legend = F, fill="steelblue") +
   coord_flip() +
   xlab("Importancia") +
   ylab("Número de respuestas") +
-  labs(title="Importancia del MeetUp de RLadies Chile + LatinR") +
+  labs(title="Importancia del MeetUp de RLadies Chile + LatinR", subtitle="1 - Poco importante, 5 - Muy importante") +
   theme(plot.title.position = "plot", panel.background = element_rect(fill="white", color="black")) 
 ```
 
+&nbsp;
 
-Finalmente, se consultó: _"En las próximas conferencias de R, ¿te interesaría o parecería relevante que haya herramientas similares?_. Nueve de las 11 personas respondieron que sería interesante/relevante repetir ambas herramientas, 1 persona refirió sólo a la #clínicadecharlas y la persona restante refirió sólo a una charla del estilo de la de Riva Quiroga.
+Finalmente, se consultó: **"En las próximas conferencias de R, ¿te interesaría o parecería relevante que haya herramientas similares?"**. Nueve de las 11 personas respondieron que sería interesante/relevante repetir ambas herramientas, 1 persona refirió sólo a la #clínicadecharlas y la persona restante refirió sólo a una charla del estilo de la de Riva Quiroga.
 
 
 ### Comentarios abiertos en relación a cooperación y ayuda
