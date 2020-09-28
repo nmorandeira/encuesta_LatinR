@@ -2,8 +2,8 @@
 title: "Submission of talk proposals to R global conferences"
 subtitle: Which barriers are perceived by Latin American community? -- Results of a survey on talk proposals to rstudio::global(2021)
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 classoption: a4paper
 ---
 
