@@ -1,4 +1,4 @@
-# [ES] Envío de propuestas a conferencias globales de R"
+# [ES] Envío de propuestas a conferencias globales de R
 ## ¿Qué barreras percibe la comunidad de América Latina? -- Resultados de una encuesta sobre enviar propuestas de charlas a rstudio::global(2021)
 
 Muchas de las próximas conferencias globales de R serán virtuales. La posibilidad de participar a la distancia disminuye el presupuesto y el tiempo destinado a asistir y/o exponer en estas conferencias. Así, las próximas conferencias virtuales suponen una oportunidad de incluir presentaciones de asistentes usualmente relegados, aumentando la diversidad de las exposiciones.
@@ -12,7 +12,7 @@ La encuesta y este informe fueron elaborados por *Natalia Morandeira*, con aport
 
 -------------
 
-# [EN] Submission of talk proposals to R global conferences"
+# [EN] Submission of talk proposals to R global conferences
 ## Which barriers are perceived by Latin American community? -- Results of a survey on talk proposals to rstudio::global(2021)
 
 Several of the upcoming R global conferences will be virtual. The possibility of participating without traveling reduces the bugdet and time invested to attend and/or present at these conferences. Thus, the next virtual conference are an opportunity to include presentations of usually relegated attendees, increasing the diversity of the contributions.
